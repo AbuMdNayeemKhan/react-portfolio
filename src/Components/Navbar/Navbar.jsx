@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo.svg';
 const Navbar = () => {
     return (
@@ -5,8 +6,8 @@ const Navbar = () => {
             <img src={logo} alt="Brand Logo" />
             <ul className='flex gap-8'>
                 <li><a href="" className='hover:text-[red] duration-300'>Home</a></li>
-                <li><a href="" className='hover:text-[red] duration-300'>About Me</a></li>
-                <li><a href="" className='hover:text-[red] duration-300'>Services</a></li>
+                <NavLink to="/about"><li><a href="" className='hover:text-[red] duration-300'>About Me</a></li></NavLink>
+                <NavLink to="/services"><li><a href="" className='hover:text-[red] duration-300'>Services</a></li></NavLink>
                 <li><a href="" className='hover:text-[red] duration-300'>Portfolio</a></li>
                 <li><a href="" className='hover:text-[red] duration-300'>Contact</a></li>
             </ul>
