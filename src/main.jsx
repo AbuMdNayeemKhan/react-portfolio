@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import {
   RouterProvider,
   createBrowserRouter,
@@ -10,6 +9,7 @@ import About from './Components/About/About.jsx';
 import Root from './Components/Root/Root.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import Services from './Components/Services/Services.jsx';
+import Portfolio from './Components/Portfolio/Portfolio.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "/services",
         element: <Services></Services>,
+      },
+      {
+        path: "/portfolio",
+        element: <Portfolio></Portfolio>
       }
     ],
   },
