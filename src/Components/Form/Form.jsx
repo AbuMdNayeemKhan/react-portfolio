@@ -14,11 +14,11 @@ const Form = () => {
             <div className='flex  pt-[200px]'>
                 <div className='w-full'>
                     <h2 className='text-4xl font-bold mb-3'>Let's Talk</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum ex hic dolorum accusamus. Numquam atque, deleniti quod modi laboriosam ipsum nam libero sit iste, voluptates quos id corporis repellat?</p>
-                    <ul>
-                        <li><MdEmail /> <span>abumdnayeemkhan@gmail.com</span></li>
-                        <li><FaSquarePhone /> <span>01619981998</span></li>
-                        <li><FaLocationDot /> <span>Mirpur, Dhaka</span></li>
+                    <p className='mt-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro earum ex hic dolorum accusamus. Numquam atque, deleniti quod modi laboriosam ipsum nam libero sit iste, voluptates quos id corporis repellat?</p>
+                    <ul className='mt-5 space-y-3'>
+                        <li className='flex text-xl gap-3 items-center'><MdEmail /> <span>abumdnayeemkhan@gmail.com</span></li>
+                        <li className='flex text-xl gap-3 items-center'><FaSquarePhone /> <span>01619981998</span></li>
+                        <li className='flex text-xl gap-3 items-center'><FaLocationDot /> <span>Mirpur, Dhaka</span></li>
                     </ul>
                 </div>
                 <div className='w-full'>
