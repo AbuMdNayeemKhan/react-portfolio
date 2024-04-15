@@ -10,6 +10,8 @@ import Root from './Components/Root/Root.jsx';
 import ErrorPage from './Components/ErrorPage/ErrorPage.jsx';
 import Services from './Components/Services/Services.jsx';
 import Portfolio from './Components/Portfolio/Portfolio.jsx'
+import Hero from './Components/Hero/Hero.jsx'
+import Form from './Components/Form/Form.jsx';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,10 @@ const router = createBrowserRouter([
     element: <Root></Root>,
     errorElement: <ErrorPage />,
     children: [
+      {
+        path: "/",
+        element: <Hero></Hero>,
+      },
       {
         path: "/about",
         element: <About></About>,
@@ -28,6 +34,10 @@ const router = createBrowserRouter([
       {
         path: "/portfolio",
         element: <Portfolio></Portfolio>
+      },
+      {
+        path: "/contact",
+        element: <Form></Form>
       }
     ],
   },
