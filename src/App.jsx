@@ -11,7 +11,7 @@ function App() {
       <About></About>
       <Counter></Counter>
       <Services></Services>
-    </>
+    </> 
   )
 }
 export default App
